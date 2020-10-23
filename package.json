@@ -1,0 +1,27 @@
+{
+  "name": "read-me-generator",
+  "version": "1.0.0",
+  "description": "Generates a README.md file for your project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markwilson107/Readme-Generator.git"
+  },
+  "keywords": [
+    "Readme",
+    "Generator",
+    "README.md"
+  ],
+  "author": "Mark Wilson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markwilson107/Readme-Generator/issues"
+  },
+  "homepage": "https://github.com/markwilson107/Readme-Generator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
