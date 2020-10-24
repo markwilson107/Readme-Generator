@@ -1,6 +1,14 @@
-# readme gen
+# Readme gen
 
-this is a read me generator
+# Table of Contents
+
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+
+## Description
+
+read me generator 
 
 ## Installation
 
@@ -8,7 +16,7 @@ install
 
 ## Usage
 
-inof
+use
 
 ## Contributing
 
@@ -18,7 +26,11 @@ cont
 
 test
 
+## Questions
+
+test
+
 ## License
 
-licence
+MIT
 

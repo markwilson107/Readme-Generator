@@ -1,7 +1,33 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
+let path = './README.md';
 
-inquirer
+try {
+  // Checks if README.md exists
+  if (fs.existsSync(path)) {
+    inquirer
+      .prompt([
+        {
+          type: "list",
+          message: "Overwrite existing README.md?",
+          name: "overwrite",
+          choices: ["yes", "no","cancel"]
+        }])
+        .then(function (response) {
+          if (response.overwrite === "no") {
+            path = './README-1.md';
+            getInfo();
+          } else if (response.overwrite === "yes") {
+            getInfo();
+          };          
+        })
+  } else { getInfo(); }
+} catch (err) {
+  console.error(err)
+}
+
+function getInfo() {
+  inquirer
   .prompt([
     {
       type: "input",
@@ -37,7 +63,7 @@ inquirer
       type: "list",
       message: "What licence is relevant to this project?",
       name: "licence",
-      choices: ["MIT","Apache","GPL"]
+      choices: ["MIT", "Apache", "GPL"]
     },
     {
       type: "input",
@@ -56,7 +82,9 @@ inquirer
     }
   ])
   .then(function (response) {
-    let template = `# ${response.name}\n\n${response.description}\n\n`;
+    let template = `# ${response.name}\n\n`
+    template += `# Table of Contents\n\n- [Description](#description)\n- [Installation](#installation)\n- [Usage](#usage)\n\n`;
+    template += `## Description\n\n${response.description}\n\n`;
     template += `## Installation\n\n${response.install}\n\n`;
     template += `## Usage\n\n${response.usage}\n\n`;
     template += `## Contributing\n\n${response.contribute}\n\n`;
@@ -64,9 +92,11 @@ inquirer
     template += `## Questions\n\n${response.test}\n\n`;
     template += `## License\n\n${response.licence}\n\n`;
 
-    fs.writeFile("README.md", template, function (err) {
+    fs.writeFile(path, template, function (err) {
       if (err) {
         console.log(err);
       }
     });
   });
+
+}
