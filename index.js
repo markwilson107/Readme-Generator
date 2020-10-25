@@ -24,7 +24,7 @@ try {
       })
   } else { getInfo(); }
 } catch (err) {
-  console.error(err)
+  console.error(err);
 }
 
 function getInfo() {
@@ -78,12 +78,12 @@ function getInfo() {
       },
       {
         type: "input",
-        message: "what is your email address?",
-        name: "email"
+        message: "Enter your image url (https://github.com/your-repository/...)",
+        name: "image"
       }
     ])
     .then(function (response) {
-      template += `# ${response.name}\n\n`
+      template += `# ${response.name}\n\n`;
       if (response.licence === "MIT") {
         template += `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)\n\n`;
       } else if (response.licence === "Apache") {
@@ -97,8 +97,9 @@ function getInfo() {
       template += `## Usage\n\n${response.usage}\n\n`;
       template += `## Contributing\n\n${response.contribute}\n\n`;
       template += `## Testing\n\n${response.test}\n\n`;
-      template += `## Questions\n\n${response.test}\n\n`;
+      template += `## Questions\n\n${response.test}\nGithub: [${response.username}](https://github.com/${response.username})\nEmail: [${response.email}](mailto:${response.email}?subject=[GitHub])\n\n`;
       template += `## License\n\n${response.licence}\n\n`;
+      template += `![Image of Application](${response.image})`;
 
       fs.writeFile(path, template, function (err) {
         if (err) {
