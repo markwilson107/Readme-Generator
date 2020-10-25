@@ -1,6 +1,6 @@
-# Readme v2
+# Readme Generator
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ### Table of Contents
 
@@ -11,36 +11,44 @@
 - [Testing](#testing)
 - [Questions](#questions)
 - [License](#license)
-- [Walkthrough Video](#walkthrough)
+- [Application Image](#application-image)
 
 ## Description
 
-This generatates the best read mes
+This is a readme generator to help you save time and write perfect readmes!
 
 ## Installation
 
-install
+To isnstal..
 
 ## Usage
 
-use
+To use..
 
 ## Contributing
 
-cont
+Contributoros..
 
 ## Testing
 
-test
+Test..
 
 ## Questions
 
-test
-Github: [markwilson107](https://github.com/markwilson107)
-Email: [markwilson107@hotmail.com](mailto:markwilson107@hotmail.com?subject=[GitHub])
+If you have any questions feel free to contact me here:
+
+ ##### Github: [github.com/markwilson107](https://github.com/markwilson107)
+
+ ##### Email: [markwilson107@hotmail.com](mailto:markwilson107@hotmail.com?subject=[GitHub])
 
 ## License
 
-GPL
+[Apache](http://www.apache.org/licenses/LICENSE-2.0.html)
 
-![Image of Application](https://github.com/markwilson107/Code-Quiz/blob/master/assets/Deployed-Application.png)
+You have the freedom to do as you like with this permissive software. This license also contains a patent license from the contributors of the code.
+
+
+
+## Application Image
+
+ ![Image of Application]()
