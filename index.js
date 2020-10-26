@@ -57,6 +57,11 @@ function getInfo() {
         name: "contribute"
       },
       {
+        type: "input",
+        message: "How can this code be tested?",
+        name: "test"
+      },
+      {
         type: "list",
         message: "What licence is relevant to this project?",
         name: "licence",
@@ -93,12 +98,13 @@ function getInfo() {
         $template += `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)\n\n`;
         licenceInfo = '(http://www.gnu.org/licenses/gpl-3.0.html)\n\nYou have the freedom to run, study, share, and modify this permissive software. Anyone who acquires this software must make it available to anyone else under the same licensing agreement.\n\n';
       };      
-      $template += `### Table of Contents\n\n- [Description](#description)\n- [Installation](#installation)\n- [Usage](#usage)\n- [Contributing](#contributing)\n- [Questions](#questions)\n- [License](#license)\n- [Application Image](#application-image)\n\n`;
+      $template += `### Table of Contents\n\n- [Description](#description)\n- [Installation](#installation)\n- [Usage](#usage)\n- [Contributing](#contributing)\n- [Testing](#testing)\n- [Questions](#questions)\n- [License](#license)\n- [Application Image](#application-image)\n\n`;
       $template += `## Description\n\n${response.description}\n\n`;
       $template += `## Installation\n\n${response.install}\n\n`;
       $template += `## Usage\n\n${response.usage}\n\n`;
       $template += `## Contributing\n\n${response.contribute}\n\n`;
       $template += `## Questions\n\nIf you have any questions feel free to contact me here:\n\n ##### Github: [github.com/${response.username}](https://github.com/${response.username})\n\n ##### Email: [${response.email}](mailto:${response.email}?subject=[GitHub])\n\n`;
+      $template += `## Testing\n\n[${response.test}]\n\n`;
       $template += `## License\n\n[${response.licence}]${licenceInfo}`;
       $template += `## Application Image\n\n ![Image of Application](${response.image})`;
       // Writes the created template to README.md file
