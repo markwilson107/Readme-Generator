@@ -1,6 +1,6 @@
 # Readme Generator
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### Table of Contents
 
@@ -8,30 +8,32 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [Testing](#testing)
 - [Questions](#questions)
 - [License](#license)
 - [Application Image](#application-image)
 
 ## Description
 
-This is a readme generator to help you save time and write perfect readmes!
+This readme generator makes it easy for you to create perfect readme files by just answering a few questions! Its important for your work to have good documentation so others can contribute and use it with ease. Make a good first impression and install the readme generator.
 
 ## Installation
 
-To isnstal..
+Getting started make sure you have node.js and npm installed on your system.
+
+1. Create a clone of this repository ``git clone https://github.com/markwilson107/Readme-Generator.git``
+2. Navigate to the directory of the cloned repository in your terminal.
+3. Install the required npm modules by running ``npm install`` in your terminal.
+4. Use ``node index.js`` to start the readme generator.
+
+If you have any trouble please refer to the walk-through video.
 
 ## Usage
 
-To use..
+Navigate to your project directory in your terminal application and run ``node index.js`` command.\n Follow the instructions and a ``README.md`` file will be created.
 
 ## Contributing
 
-Contributoros..
-
-## Testing
-
-Test..
+If you want to contribute please create and issue or pull-request and I will get back to you as soon as possible.
 
 ## Questions
 
@@ -43,12 +45,12 @@ If you have any questions feel free to contact me here:
 
 ## License
 
-[Apache](http://www.apache.org/licenses/LICENSE-2.0.html)
+[MIT](https://opensource.org/licenses/MIT)
 
-You have the freedom to do as you like with this permissive software. This license also contains a patent license from the contributors of the code.
+You have the freedom to do as you like with this permissive software, as long as an original copy and license notice is included. I cannon be held liable for this software.
 
 
 
 ## Application Image
 
- ![Image of Application]()
+ ![Image of Application]( https://github.com/markwilson107/Readme-Generator/blob/main/images/deployed-application.png)
