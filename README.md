@@ -10,6 +10,7 @@
 - [Contributing](#contributing)
 - [Questions](#questions)
 - [License](#license)
+- [Walk-through Video](#walk-through-video)
 - [Application Image](#application-image)
 
 ## Description
@@ -49,7 +50,9 @@ If you have any questions feel free to contact me here:
 
 You have the freedom to do as you like with this permissive software, as long as an original copy and license notice is included. I cannon be held liable for this software.
 
+## Walk-through Video
 
+##### Video: [Readme Generator Walk-through](https://drive.google.com/file/d/1QvjLTv_Rml1mOnN876eHSK2Oz3sm2nkT/view?usp=sharing)
 
 ## Application Image
 
