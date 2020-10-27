@@ -30,7 +30,7 @@ If you have any trouble please refer to the walk-through video.
 
 ## Usage
 
-Navigate to your project directory in your terminal application and run ``node index.js`` command.\n Follow the instructions and a ``README.md`` file will be created.
+Navigate to your project directory in your terminal application and run ``node index.js`` command. Follow the instructions and a ``README.md`` file will be created.
 
 ## Contributing
 
